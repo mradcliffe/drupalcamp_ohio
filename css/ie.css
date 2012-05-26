@@ -1,0 +1,20 @@
+#navigation li.active-trail a {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+h1#page-title,
+.front #content h2 {
+  font-weight: bold;
+  text-transform: normal;
+  font-size: 24px;
+}
+
+#sidebar-left li {
+  font-weight: bold;
+}
+
+.custom-button, #footer a, #footer li a, #footer li a.active {
+  font-weight: bold;
+  font-size: 12px;
+}
