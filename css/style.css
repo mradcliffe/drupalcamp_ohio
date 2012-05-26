@@ -385,7 +385,6 @@ body.admin-menu {
   height: 30px;
   line-height: 31px;
 }
-
 #sidebar-first li:hover {
   background-color: #EEEEEE;
 }
@@ -675,6 +674,19 @@ h1#page-title {
 #breadcrumb a:hover {
   color: #EEEEEE;
 }
+
+
+#content .view-sponsorship-benefits td {
+  vertical-align: top;
+  padding-top: 16px;
+}
+
+#content .view-sponsorship-benefits .views-field-title,
+#content .view-sponsorship-benefits .views-field-add-to-cart-form,
+#content .view-sponsorship-benefits .views-field-commerce-price {
+  text-align: center;
+}
+
 
 /* Footer */
 
