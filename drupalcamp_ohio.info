@@ -1,8 +1,7 @@
 name = DrupalCamp Ohio 
 description = Theme for DrupalCamp Ohio.
 version = VERSION
-core = 6.x
-engine = phptemplate
+core = 7.x
 
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/layout.css
@@ -12,10 +11,12 @@ conditional-stylesheets[if IE][all][] = css/ie.css
 
 scripts[] = js/menu.js
 
-regions[left] = Left sidebar
-regions[right] = Right sidebar
+regions[sidebar_first] = Left sidebar
+regions[sidebar_second] = Right sidebar
 regions[regnotice] = Registration Notice
 regions[top] = Content Top
 regions[content] = Content
 regions[header] = Header
 regions[footer] = Footer
+regions[help] = Help
+regions[highlighted] = Highlighted

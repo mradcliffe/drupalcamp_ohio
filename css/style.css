@@ -134,7 +134,7 @@ body.admin-menu {
 }
  
 #navigation li.active-trail a {
-  box-shadow: 0 0 2px #000000;
+  box-shadow: 0 2px 4px #333;
   background: #222222; /* Old browsers */
   background: -moz-linear-gradient(top, #222222 0%, #111111 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#111111), color-stop(100%,#000000)); /* Chrome,Safari4+ */
@@ -165,15 +165,18 @@ body.admin-menu {
   background: -ms-linear-gradient(top, #dddddd 0%,#ffffff 100%); /* IE10+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
   background: linear-gradient(top, #dddddd 0%,#ffffff 100%); /* W3C */
+  z-index: 300;
+  position: relative;
 }
 
-#header-wrapper #header {
+#navigation {
   width: 100%;
   margin: 0 auto;
   text-align: left;
   box-shadow: 0 2px 4px #333333;
   z-index: 300;
   position: relative;
+  z-index: 200;
 }
 
 #navigation a:hover {
@@ -343,7 +346,7 @@ body.admin-menu {
 
 }
 
-#sidebar-right {
+#sidebar-second {
   background-color: #222222;
   box-shadow: -4px 4px 4px -2px #333333;
   padding: 1px 15px;
@@ -351,71 +354,71 @@ body.admin-menu {
   clear: both;
 }
  
-#sidebar-right div.block {
+#sidebar-second div.block {
   position: relative;
   z-index: 100;  
 }
 
-#sidebar-left {
+#sidebar-first {
   margin-bottom: 16px;  
   margin-left: -19px;
   box-shadow: -4px 4px 4px -2px #333333
 }
 
-#sidebar-left li.first {
+#sidebar-first li.first {
   border-radius: 0 2px 0 0;
 }
 
-#sidebar-left li.leaf.last {
+#sidebar-first li.leaf.last {
   border-radius: 0 0 2px 0;
   border-bottom-width: 1px;
 }
 
-#sidebar-left li.expanded li.leaf.last {
+#sidebar-first li.expanded li.leaf.last {
   border-radius: 0;
   border-bottom-width: 0;
 }
 
-#sidebar-left .block a {
+#sidebar-first .block a {
   text-decoration: none;  
   display: block;
   height: 30px;
   line-height: 31px;
 }
 
-#sidebar-left li:hover {
+#sidebar-first li:hover {
   background-color: #EEEEEE;
 }
 
-#sidebar-left li a {
+#sidebar-first li a {
   color: #333333;
 }
 
-#sidebar-left li.active > a {
+#sidebar-first li.active > a {
   color: #000000;
 }
 
-#sidebar-left li.active {
+#sidebar-first li.active {
   background: url("../images/black-arrow.png") no-repeat scroll 0 0 #FFFFFF;
   border-width: 1px 0 0 0;
 }
 
-#sidebar-left li.first.active-trail,
-#sidebar-left li.first.active {
+#sidebar-first li.first.active-trail,
+#sidebar-first li.first.active {
   border-width: 0;
 }
 
-#sidebar-left li.active-trail {
+#sidebar-first li.active-trail {
   background-color: #FFFFFF;
   border-left-width: 0;
 }
 
-#sidebar-left ul {
+#sidebar-first ul {
   margin: 0;
   padding: 0;
 }
 
-#sidebar-left li {
+#sidebar-first li {
   font-size: 15px;
   font-family: Univers;
   margin: 0;
@@ -706,13 +709,21 @@ h1#page-title {
   float: right;
   margin-right: 25px;
   position: relative;
-  top: -1px;
 }
 
-#block-menu-primary-links ul li {
+#footer ul.menu {
+  padding: 0;
+  margin: 0;
+}
+
+#block-system-main-menu ul li {
   float: left;
   list-style: none;
   margin-right: 10px;
+}
+
+#block-system-main-menu {
+  top: -1px;
 }
 
 .feed-icon {
@@ -892,7 +903,7 @@ input.form-submit:hover {
   border-radius: 0 2px 0 0;  
 }
 
-.front #content-top .views-field-field-marketing-image-fid {
+.front #content-top .views-field-field-marketing-image {
   position: absolute;
   right: 0;
   top: 0;
