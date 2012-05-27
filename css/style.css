@@ -598,18 +598,19 @@ body.admin-menu {
 }
 
 #sidebar .view-commerce-cart-block .views-table tbody td {
-  min-width: auto;
+  min-width: 0;
 }
 
 #sidebar .view-commerce-cart-block .view-footer {
   background-color: #FFF;
+  padding: 10px;
 }
 
 #sidebar .view-commerce-cart-block .view-footer .line-item-summary {
   margin: 0;
 }
 
-#sidebar .view-commerce-cart-block .view-footer .line-item-summary {
+#sidebar .view-commerce-cart-block .view-footer .line-item-summary .line-item-total {
   margin-bottom: 10px;
 }
 
@@ -644,6 +645,7 @@ body.admin-menu {
 #sidebar .view-tweets .view-content li,
 #sidebar .view-commerce-cart-block {
   border-radius: 2px;  
+  overflow-hidden;
 }
 
 #main #content tbody {
