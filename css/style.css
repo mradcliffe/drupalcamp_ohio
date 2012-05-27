@@ -645,7 +645,7 @@ body.admin-menu {
 #sidebar .view-tweets .view-content li,
 #sidebar .view-commerce-cart-block {
   border-radius: 2px;  
-  overflow-hidden;
+  overflow: hidden;
 }
 
 #main #content tbody {
