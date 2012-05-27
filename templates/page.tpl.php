@@ -167,7 +167,7 @@
 
     <div id="footer"><div class="section">
       <?php print render($page['footer']); ?>
-      <div id="footer-message">Thanks to our <a href='/volunteers'>Volunteers</a></div>
+      <div id="footer-message">Thanks to our <a href='/about/staff'>Volunteers</a></div>
     </div></div> <!-- /.section, /#footer -->
 
   </div></div> <!-- /#page, /#page-wrapper -->
